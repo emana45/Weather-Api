@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="home-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imgs/logo@2x.png" alt="" class="me-3" width="64" height="38">
+                    <div class="brand-title">
+                        <h1 class="h6 fw-bold">Weather</h1>
+                        <small class="">tagline goes here</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                        <li class="nav-item mx23 ">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="home">
+        <div class="home-bg-img">
+            <div class="container w-75 m-auto">
+                <form class="position-relative ">
+                    <input class="form-control w-100" placeholder="find your location...">
+                    <button class="btn rounded-5 py-2 text-white position-absolute form-btn">Find</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="home-table">
+            <div class="container w-75 m-auto position-relative">
+                <div class="weather bg-info d-flex row  ">
+                    <div class="today-weather col-md-4 ">
+                        <div class="today-header d-flex justify-content-between p-2">
+                            <div class="day">Sunday</div>
+                            <div class="date">7July</div>
+                        </div>
+                        <div class="today-content px-3 py-4">
+                            <div class="city fs-5">Cairo</div>
+                            <div class="degree">
+                                <div class="degree-num">
+                                    33.3<sup>o</sup>C
+                                </div>
+                                <div class="degree-photo">
+                                    <img src="imgs/296.png" alt="">
+                                </div>
+                            </div>
+                            <div class="today-desc py-3">
+                                Sunny
+                            </div>
+                            <div class="today-info py-2">
+                                <span class="me-3">
+                                    <img src="imgs/icon-umberella.png" alt="">
+                                    20%
+                                </span>
+                                <span class="me-3">
+                                    <img src="imgs/icon-wind.png" alt="">
+                                    18Km/h
+                                </span>
+                                <span>
+                                    <img src="imgs/icon-compass.png" alt="">
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tomorrow-weather col-md-4">
+                        <div class="tomorrow-header d-flex justify-content-center p-2">
+                            <div class="day">Sunday</div>
+                        </div>
+                        <div class="tomorrow-content d-flex flex-column justify-content-center align-items-center">
+                            <div class="tomorrow-img pt-5">
+                                <img src="imgs/176.png" alt="" class="pt-2">
+                            </div>
+                            <div class="tomorrow-info pt-4">
+                                <div>
+                                    <p class="fw-bold fs-4 text-white">24.1<sup>o</sup>C</p>
+                                </div>
+                                <span class="ps-3">21.5<sup>o</sup>C</span>
+                            </div>
+                            <div class="tomorrow-desc pt-2">
+                                <span>Sunny</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="next-weather col-md-4 ">
+                        <div class="next-header d-flex justify-content-center p-2">
+                            <div class="day">Sunday</div>
+                        </div>
+                        <div class="next-content pt-5 d-flex flex-column justify-content-center align-items-center">
+                            <div class="next-img">
+                                <img src="imgs/176.png" alt="" class="pt-2">
+                            </div>
+                            <div class="next-info pt-4">
+                                <div>
+                                    <p class="text-white fs-4 fw-bold">24.1<sup>o</sup>C</p>
+                                </div>
+                                <span class="ps-3">21.5<sup>o</sup>C</span>
+                            </div>
+                            <div class="next-desc pt-2">
+                                <span>Sunny</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container  p-5">
+            <div class="row  py-4">
+                <div class="col-md-8 ">
+                    <div class="position-relative">
+                        <input type="text" class="form-control w-100" placeholder="find your location..." id="searchInput">
+                        <button class="btn rounded-5 py-2 text-white position-absolute" id="findBtn">Find</button>
+                    </div>
+                    <p class="pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-4  d-flex justify-content-center pt-3 footer-icons">
+                    <div><span><i class="fa-brands fa-facebook"></i></span></div>
+                    <div><span><i class="fa-brands fa-twitter"></i></span></div>
+                    <div><span><i class="fa-brands fa-google"></i></span></div>
+                    <div><span><i class="fa-brands fa-pinterest"></i></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+:root{
+    --main-color:#1E202B;
+    --sec-color:#1E202B;
+    --btn-color:#019AD8;
+    --main-text-color: #009ad8;
+    --sec-text-color:rgb(191, 193, 200);
+
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar{
+    padding: 3rem;
+    --bs-navbar-active-color:white
+}
+
+.nav-link{
+    color:white;
+    padding:0.2rem;
+
+}
+
+.navbar-brand{
+    color:white
+}
+
+.bg-body-tertiary{
+    background-color: var(--main-color) !important;
+}
+
+small{
+    font-weight:300;
+    font-size: 10px;
+    line-height: 21px;
+    color: rgb(191, 193, 200)    ;
+}
+
+.h6{
+    margin-bottom: -0.3rem;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar ul li{
+    font-size: 14px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 3px 20px;
+    border : solid 2px transparent;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-color:#009ad8; 
+    color:var(--main-text-color)
+
+}
+
+
+.navbar-nav .nav-link.active{
+    color:#009ad8;
+    border : solid 2px #009ad8;
+    border-radius: 30px;
+}
+
+.home-bg-img{
+    background-image: url(../imgs/banner.png);
+    height: 50vh;
+}
+
+.home-bg-img .container{
+    height: inherit;
+}
+
+.form-control{
+   padding: 18px 20px 18px 20px;
+   background-color: var(--main-color);
+   color: gainsboro;
+   border-color: transparent;
+   border-radius: 30px;
+   font-size: 14px;
+}
+
+.form-btn{
+    right:5px;
+    bottom: 8px;
+    padding: 2.2rem;
+    background-color: #019AD8;
+
+}
+
+.home-bg-img .container form{
+    top:75px
+}
+
+.form-control:focus{
+    background-color: var(--main-color);
+    border:none;
+    color:white;
+    box-shadow:none
+}
+
+.btn:hover{
+   background-color:#009ad8 !important;
+   border-color: none;
+}
+
+.home-table{
+    background-color: var(--main-color);
+    color:rgb(191, 193, 200)
+
+}
+
+.next-weather{
+    background-color: #323544;
+}
+
+.today-header , .next-header{
+    background-color: #2D303D;
+    font-size: 14px;
+}
+
+
+
+.degree .degree-num{
+  font-size: 90px;
+  line-height: 135px;
+  font-weight: 700;
+  color:white
+
+}
+
+.today-desc , .tomorrow-desc , .next-desc {
+   color: var(--main-text-color);
+   font-size:14px
+}
+
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}   
+
+.today-info span{
+    font-size: 14px;
+}
+
+.today-weather{
+    background-color:  #323544;
+}
+
+.tomorrow-header{
+    background-color: #222530;
+    font-size: 14px;
+}
+
+.tomorrow-weather{
+    background-color: #262936;
+}
+
+.home-table .container{
+  top:-125px
+}
+
+.today-weather , .tomorrow-weather , .next-weather{
+    min-height:140px;
+}
+
+.col-md-8 p{
+    font-size: 14px;
+    color: var(--sec-text-color);
+}
+
+.footer{
+    background-color: #262936;
+}
+
+.footer-icons div{
+    width:40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #009ad8;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    transition: color 0.2s , backgound-color 0.2s;
+}
+
+.footer-icons div:hover{
+    color:white;
+    background-color: var(--main-text-color);
+}
